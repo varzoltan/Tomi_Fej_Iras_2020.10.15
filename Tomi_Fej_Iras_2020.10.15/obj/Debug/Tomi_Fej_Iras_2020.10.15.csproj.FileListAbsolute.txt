@@ -1,0 +1,7 @@
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\bin\Debug\Tomi_Fej_Iras_2020.10.15.exe.config
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\bin\Debug\Tomi_Fej_Iras_2020.10.15.exe
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\bin\Debug\Tomi_Fej_Iras_2020.10.15.pdb
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\obj\Debug\Tomi_Fej_Iras_2020.10.15.csprojAssemblyReference.cache
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\obj\Debug\Tomi_Fej_Iras_2020.10.15.csproj.CoreCompileInputs.cache
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\obj\Debug\Tomi_Fej_Iras_2020.10.15.exe
+C:\Users\Rendszergazda\Documents\GitHub\Tomi_Fej_Iras_2020.10.15\Tomi_Fej_Iras_2020.10.15\obj\Debug\Tomi_Fej_Iras_2020.10.15.pdb

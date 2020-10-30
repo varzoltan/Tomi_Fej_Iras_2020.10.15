@@ -69,11 +69,89 @@ namespace Tomi_Fej_Iras_2020._10._15
             Console.WriteLine("4.Feladat\nA kísérlet során a fej gyakorisága {0} volt.",(fej*100.0 / n).ToString("0.00"));
 
             //5.Feladat
+            int szamol = 0;
+            if(kiserlet[0]+kiserlet[1]+kiserlet[2] == "FFI")
+            {
+                szamol++;
+            }
+            if (kiserlet[kiserlet.Length-3] + kiserlet[kiserlet.Length-2] + kiserlet[kiserlet.Length-1] == "IFF")
+            {
+                szamol++;
+            }
             for (int i =0;i<n;i++)
             {
-                
+                string dobtunk = kiserlet[i] + kiserlet[i + 1] + kiserlet[i + 2] + kiserlet[i + 3];
+                if (dobtunk == "IFFI")
+                {
+                    szamol++;
+                }
             }
+            Console.WriteLine("5. feladat\nA kisérlet során {0} alkalommal dobtak pontosan két fejet egymás után.",szamol);
+
+            //6.feladat
+            int max = 0;
+            int maxh = 0;
+            for (int i = 0;i<n;i++)
+            {
+                if (kiserlet[i] == "F")
+                {
+                    int db = 1;
+                    int j = i + 1;
+                    while (kiserlet[j] == "F")
+                    {
+                        db++;
+                        j++;
+                    }
+                    if (max<db)
+                    {
+                        max = db;
+                        maxh = i+1;
+                    }
+                    i = j;
+                }
+            }
+            Console.WriteLine("6. feladat\nA leghoszabb tisztafej sorozat {0} tagból áll, kezdete a(z) {1}. dobás", max, maxh);
+
+            //7. feladat
+            //1000 elemű tömb létrehozása
+            string[] dobasok = new string[1000];
+            int FFFF = 0;
+            int FFFI = 0;
+            for (int i = 0;i<dobasok.Length;i++)
+            {
+                string dob4 = Dobas() + Dobas() + Dobas() + Dobas();
+                if (dob4 == "FFFF")
+                {
+                    FFFF++;
+                }
+                if (dob4 == "FFFI")
+                {
+                    FFFI++;
+                }
+                dobasok[i] = dob4;
+            }
+            StreamWriter ir = new StreamWriter(@"C:\Users\Rendszergazda\Downloads\dobasok.txt");
+            ir.WriteLine("FFFF: " + FFFF + ", " + "FFFI: " + FFFI);
+            for(int i = 0; i < dobasok.Length; i++)
+            {
+                ir.Write(dobasok[i]+" ");
+            }
+            ir.Close();
             Console.ReadKey();
+        }
+
+        //Függvény készítése a dobáshoz!
+        static string Dobas()
+        {
+            Random veletlen = new Random();
+            if (veletlen.Next(1,3) == 1)
+            {
+                return "F";
+            }
+            else
+            {
+                return "I";
+            }
         }
     }
 }

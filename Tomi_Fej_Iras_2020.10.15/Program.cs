@@ -144,7 +144,8 @@ namespace Tomi_Fej_Iras_2020._10._15
         static string Dobas()
         {
             Random veletlen = new Random();
-            if (veletlen.Next(1,3) == 1)
+            int dob = veletlen.Next(1,3);
+            if (dob == 1)
             {
                 return "F";
             }
